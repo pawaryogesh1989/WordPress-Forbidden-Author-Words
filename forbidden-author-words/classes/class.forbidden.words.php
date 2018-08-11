@@ -53,7 +53,7 @@ class Forbidden_Author_Words {
                     foreach ($restricted_words as $restricted_word) {
 
                         if (get_option('forbidden_title') == "true" || get_option('forbidden_title') == "") {
-                            if (preg_match('/\\b' . $title . '\\b/', strtolower($restricted_word))) {
+                            if (preg_match('/\\b' . $restricted_word . '\\b/i', $title)) {
                                 $author_post = array();
                                 $author_post['ID'] = $post->ID;
                                 $author_post['post_status'] = 'draft';
@@ -64,7 +64,7 @@ class Forbidden_Author_Words {
                         }
 
                         if (get_option('forbidden_content') == "true" || get_option('forbidden_content') == "") {
-                            if (preg_match('/\\b' . $content . '\\b/', strtolower($restricted_word))) {
+                            if (preg_match('/\\b' . $restricted_word . '\\b/i', $content)) {
                                 $author_post = array();
                                 $author_post['ID'] = $post->ID;
                                 $author_post['post_status'] = 'draft';
