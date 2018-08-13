@@ -83,7 +83,7 @@ class Forbidden_Author_Words {
         if (get_option('forbidden_notice') == "true" || get_option('forbidden_notice') == "") {
             ?>
             <div class="updated notice is-dismissible">
-                <p><?php _e('The Following words are not excepted while adding, updating an Article/Post.<br /><b>' . get_option('forbidden_words') . '</b>'); ?></p>
+                <p><?php _e('The Following words are not accepted while adding or updating an Article/Post.<br /><b>' . get_option('forbidden_words') . '</b>'); ?></p>
             </div>
             <?php
         }
