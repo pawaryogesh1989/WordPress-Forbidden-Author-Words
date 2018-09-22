@@ -16,7 +16,7 @@ class Forbidden_Author_Words {
     }
 
     public function wp_forbidden_words_menu() {
-        add_menu_page('Forbidden Author Words', 'Forbidden Author Words', 'manage_options', 'forbidden-author-words', array($this, 'load_forbidden_words_page'), '', 85);
+        add_options_page('Forbidden Author Words', 'Forbidden Author Words', 'manage_options', 'forbidden-author-words', array($this, 'load_forbidden_words_page'), '', 85);
     }
 
     public function load_forbidden_words_page() {
