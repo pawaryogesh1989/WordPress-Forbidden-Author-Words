@@ -16,7 +16,7 @@ class Forbidden_Author_Words {
     }
 
     public function wp_forbidden_words_menu() {
-        add_menu_page('Forbidden Author Words', 'Forbidden Author Words', 'manage_options', 'forbidden-author-words', array($this, 'load_forbidden_words_page'), '', 85);
+        add_options_page('Forbidden Author Words', 'Forbidden Author Words', 'manage_options', 'forbidden-author-words', array($this, 'load_forbidden_words_page'), '', 85);
     }
 
     public function load_forbidden_words_page() {
@@ -53,7 +53,7 @@ class Forbidden_Author_Words {
                     foreach ($restricted_words as $restricted_word) {
 
                         if (get_option('forbidden_title') == "true" || get_option('forbidden_title') == "") {
-                            if (preg_match('/\\b' . $title . '\\b/', strtolower($restricted_word))) {
+                            if (preg_match('/\\b' . $restricted_word . '\\b/i', $title)) {
                                 $author_post = array();
                                 $author_post['ID'] = $post->ID;
                                 $author_post['post_status'] = 'draft';
@@ -64,7 +64,7 @@ class Forbidden_Author_Words {
                         }
 
                         if (get_option('forbidden_content') == "true" || get_option('forbidden_content') == "") {
-                            if (preg_match('/\\b' . $content . '\\b/', strtolower($restricted_word))) {
+                            if (preg_match('/\\b' . $restricted_word . '\\b/i', $content)) {
                                 $author_post = array();
                                 $author_post['ID'] = $post->ID;
                                 $author_post['post_status'] = 'draft';
@@ -83,7 +83,7 @@ class Forbidden_Author_Words {
         if (get_option('forbidden_notice') == "true" || get_option('forbidden_notice') == "") {
             ?>
             <div class="updated notice is-dismissible">
-                <p><?php _e('The Following words are not excepted while adding, updating an Article/Post.<br /><b>' . get_option('forbidden_words') . '</b>'); ?></p>
+                <p><?php _e('The Following words are not accepted while adding or updating an Article/Post.<br /><b>' . get_option('forbidden_words') . '</b>'); ?></p>
             </div>
             <?php
         }
