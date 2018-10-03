@@ -2,8 +2,8 @@
 Contributors: pawaryogesh1989, clarionwpdeveloper
 Tags: Forbidden Author Words, restrict post titles, restrict post content, restrict words in post titles, post title review, post content review, post title moderation, moderate post content, restrict post content words, restrict post title words.
 Requires at least: 3.0.1
-Tested up to: 4.5.2
-Stable tag: 4.5
+Tested up to: 4.9.8
+Stable tag: 4.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
