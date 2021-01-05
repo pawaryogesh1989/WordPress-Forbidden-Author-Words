@@ -7,7 +7,7 @@
   Plugin Name: Forbidden Author Words
   Plugin URI: http://www.clariontechnologies.co.in
   Description: Forbidden Author Words
-  Version: 1.0.0
+  Version: 2.0.0
   Author: Yogesh Pawar, Clarion Technologies
   Author URI: http://www.clariontechnologies.co.in
   License: GPLv2 or later

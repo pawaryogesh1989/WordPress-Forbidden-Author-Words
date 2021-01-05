@@ -1,13 +1,14 @@
 === Forbidden Author Words ===
 Contributors: pawaryogesh1989, clarionwpdeveloper
-Tags: Forbidden Author Words, restrict post titles, restrict post content, restrict words in post titles, post title review, post content review, post title moderation, moderate post content, restrict post content words, restrict post title words.
-Requires at least: 3.0.1
-Tested up to: 4.9.8
-Stable tag: 4.9
+Tags: Forbidden Author Words, restrict post title, restrict post content, restrict words in post titles, post title review, post content review, post title moderation, moderate post content, restrict post content words, restrict post title words.
+Requires at least: 5.0 or higher
+Tested up to: 5.6
+Stable tag: 5.0
+PHP Version: 5.6 or higher
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Use this plugin to restrict Authors use of some words that should not used.
+Use this plugin to restrict Authors to use of some words that should not used.
 
 == Description ==
  
@@ -16,9 +17,13 @@ If you manage a multi-author blog and want authors to avoid using certain words 
 
 = Details =
 
-* Plugin Option in admin section to add the words that are to be restricted.
+* Plugin Option in Admin section to add the words that are to be restricted.
 * Option to either restrict words in Post title or Post content or Both.
-* Option to display the "Restricted words" as a notice in the entire admin section. (Can be turned off)
+* Option to display the "Restricted words" as a notice in the entire Admin section. (Can be turned off)
+
+== Screenshots ==
+
+1. screenshot-1 - Option in Admin Section to add the restricted words.
 
 == Installation ==
 
@@ -27,7 +32,7 @@ The Plugin can be installed in two ways.
 = Download and Install =
 
 1. Download and upload the plugin files to the `/wp-content/plugins/forbidden-author-words` directory from the Wordpress plugin repository.
-2. Activate the plugin through the 'Plugins' screen in WordPress admin.
+2. Activate the plugin through the 'Plugins' screen in WordPress Admin.
 
 = Using Plugin Interface =
 
